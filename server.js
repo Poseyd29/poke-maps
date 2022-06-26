@@ -10,3 +10,6 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
+//server can use style.css
+app.use(express.static(__dirname));
+
