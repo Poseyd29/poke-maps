@@ -1,0 +1,72 @@
+html {
+    /* max-width: 800px;
+    max-height: 800px;
+    box-sizing: border-box; */
+    
+}
+
+body {
+    max-width: 100%;
+    max-height: 100%;
+    background: red;
+    justify-content: center;
+    
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.search-bar {
+    padding: 2em 0 2em 0;
+    justify-content: center;
+}
+
+.search-input {
+    height: 2em;
+    width: 20em;
+}
+
+.search-button {
+    margin-left: 0.5em;
+    width: 6em;
+}
+
+
+.dex {
+    height: 100%;
+    /* width: 100%; */
+    min-width: 600px;
+    min-height: 600px;
+    /* border: 2px solid black; */
+    padding: 2em 5em;
+    border-radius: 1em;
+}
+
+.dex-text {
+    font-size: 1.6em;
+}
+
+.screen-container {
+    border: 2px solid #8dc73f ;
+    background: #8dc73f ;
+    height: inherit;
+    width: 100%;
+    min-width: 600px;
+    min-height: 600px;
+    max-height: 100%;
+    border-radius: 1em;
+    /* margin: 4em 3em; */
+}
+
+.screen {
+    padding: 4em;
+}
