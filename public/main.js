@@ -13,24 +13,19 @@ const fetchPokemon = () => {
     document.querySelector('.search-button').addEventListener('click', fetchPokemon)
     const choice = document.querySelector('.search-input').value
 
-    // const url = `https://pokeapi.co/api/v2/pokemon/${choice}`
-    const url = `https://pokeapi.co/api/v2/encounter-method/${choice}`
+    const url = `https://pokeapi.co/api/v2/pokemon/${choice}`
+    // const url = `https://pokeapi.co/api/v2/encounter-method/${choice}`
     fetch(url)
         .then(res => {
             return res.json()
         })
         .then(data => {
-            console.log(data)
             const pokemon = {
                 name: data.name,
                 id: data.id,
                 image: data.sprites['front_default'],
                 locations: data.location_area_encounters
             }
-            // pokemon['name'] = data.name
-            // pokemon['id'] = data.id
-            // pokemon['locations'] = data.location_area_encounters
-            // pokemon['image'] = data.sprites['front_default']
             document.querySelector('.screen').innerHTML = pokemon.locations
         })
 }
