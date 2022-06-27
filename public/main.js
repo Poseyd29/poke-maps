@@ -26,6 +26,7 @@ const fetchPokemon = () => {
                 image: data.sprites['front_default'],
                 locations: data.location_area_encounters
             }
+            console.log(pokemon)
             document.querySelector('.screen').innerHTML = pokemon.locations
         })
 }
